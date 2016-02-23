@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Notes">
+      <UniqueIdentifier>{2d5a4f44-97e4-4e40-af33-fa3468f5f837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{9b85978e-44c5-4262-9488-27aae7cf93ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{26fbb4f3-188b-4019-b39e-1c7b2c1b83cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG">
+      <UniqueIdentifier>{c2566b76-7dee-44d0-b81b-6cb19481d274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Header Files">
+      <UniqueIdentifier>{88385d26-4af5-4004-a469-97d1bab7496a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Header Files\CPU">
+      <UniqueIdentifier>{9dbf5848-78fc-4551-8a01-b9223f889184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Header Files\GPU">
+      <UniqueIdentifier>{c5d1d6a8-dd81-4dd5-8cae-c431057867e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Source Files">
+      <UniqueIdentifier>{a6bf1070-ae99-418b-b8ab-7e08d08d5c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Source Files\GPU">
+      <UniqueIdentifier>{66cbe765-5382-4821-a750-eabe532b69a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HOG\Source Files\CPU">
+      <UniqueIdentifier>{a2f9c37a-1873-40a9-b508-d40261c8e93e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fastHOG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageWindow.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="HOG\HOGEngine.cpp">
+      <Filter>HOG\Source Files\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="HOG\HOGImage.cpp">
+      <Filter>HOG\Source Files\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="HOG\HOGNMS.cpp">
+      <Filter>HOG\Source Files\CPU</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Notes\CUDANotes.txt">
+      <Filter>Notes</Filter>
+    </None>
+    <None Include="Others\persondetectorwt.tcc">
+      <Filter>Others</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\FreeImage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageWindow.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Timer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGEngine.h">
+      <Filter>HOG\Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGImage.h">
+      <Filter>HOG\Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGNMS.h">
+      <Filter>HOG\Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGPoint3.h">
+      <Filter>HOG\Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGResult.h">
+      <Filter>HOG\Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGConvolution.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGDefines.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGEngineDevice.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGHistogram.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGPadding.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGScale.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGSVMSlider.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HOG\HOGUtils.h">
+      <Filter>HOG\Header Files\GPU</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="HOG\HOGUtils.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGConvolution.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGEngineDevice.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGHistogram.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGPadding.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGScale.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HOG\HOGSVMSlider.cu">
+      <Filter>HOG\Source Files\GPU</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
